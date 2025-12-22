@@ -269,26 +269,6 @@
         </div>
     </section>
 
-    <!-- Download Modal -->
-    <div id="downloadModal" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closeModal()">&times;</span>
-            <div class="modal-icon">&#128274;</div>
-            <h3>Download Access Required</h3>
-            <p class="modal-app-name" id="modalAppName"></p>
-            <p>Enter your download passcode to continue:</p>
-            <input type="password" id="passcodeInput" placeholder="Enter passcode" autocomplete="off">
-            <p class="modal-error" id="modalError"></p>
-            <button class="btn btn-primary modal-btn" onclick="verifyPasscode()">Download</button>
-            <div class="modal-contact">
-                <p>Need a passcode? Contact us:</p>
-                <p><a href="mailto:Sales@ideatech.us">Sales@ideatech.us</a></p>
-                <p><a href="mailto:Janellae@ideatech.us">Janellae@ideatech.us</a></p>
-                <p><a href="tel:+17088080719">(708) 808-0719</a></p>
-            </div>
-        </div>
-    </div>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -308,66 +288,26 @@
         // Download passcode - change this to update the code
         const DOWNLOAD_PASSCODE = 'NEST-ACCESS';
 
-        let currentDownloadUrl = '';
-        let currentAppName = '';
-
-        // Intercept all download button clicks
+        // Simple passcode check using native prompt
         document.addEventListener('DOMContentLoaded', function() {
             const downloadBtns = document.querySelectorAll('.btn-download');
             downloadBtns.forEach(btn => {
                 btn.addEventListener('click', function(e) {
                     e.preventDefault();
-                    currentDownloadUrl = this.getAttribute('href');
-                    // Get app name from the card
+                    const url = this.getAttribute('href');
                     const card = this.closest('.app-card');
-                    currentAppName = card.querySelector('.app-name').textContent;
-                    openModal();
+                    const appName = card.querySelector('.app-name').textContent;
+
+                    const code = prompt('Enter download passcode for ' + appName + ':\n\nContact Sales@ideatech.us or (708) 808-0719 to get your passcode.');
+
+                    if (code && code.toUpperCase().trim() === DOWNLOAD_PASSCODE) {
+                        // Correct - redirect to download
+                        window.location.href = url;
+                    } else if (code !== null) {
+                        alert('Invalid passcode.\n\nContact us for access:\nSales@ideatech.us\nJanellae@ideatech.us\n(708) 808-0719');
+                    }
                 });
             });
-
-            // Allow Enter key to submit
-            document.getElementById('passcodeInput').addEventListener('keypress', function(e) {
-                if (e.key === 'Enter') {
-                    verifyPasscode();
-                }
-            });
-        });
-
-        function openModal() {
-            document.getElementById('downloadModal').style.display = 'flex';
-            document.getElementById('modalAppName').textContent = currentAppName;
-            document.getElementById('passcodeInput').value = '';
-            document.getElementById('modalError').textContent = '';
-            document.getElementById('passcodeInput').focus();
-        }
-
-        function closeModal() {
-            document.getElementById('downloadModal').style.display = 'none';
-            currentDownloadUrl = '';
-            currentAppName = '';
-        }
-
-        function verifyPasscode() {
-            const input = document.getElementById('passcodeInput').value.toUpperCase().trim();
-
-            if (input === DOWNLOAD_PASSCODE) {
-                // Success - start download
-                closeModal();
-                window.location.href = currentDownloadUrl;
-            } else {
-                // Wrong passcode
-                document.getElementById('modalError').textContent = 'Invalid passcode. Please contact us for access.';
-                document.getElementById('passcodeInput').value = '';
-                document.getElementById('passcodeInput').focus();
-            }
-        }
-
-        // Close modal when clicking outside
-        window.addEventListener('click', function(e) {
-            const modal = document.getElementById('downloadModal');
-            if (e.target === modal) {
-                closeModal();
-            }
         });
     </script>
 </body>
