@@ -353,12 +353,7 @@
             if (input === DOWNLOAD_PASSCODE) {
                 // Success - start download
                 closeModal();
-                const link = document.createElement('a');
-                link.href = currentDownloadUrl;
-                link.download = '';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
+                window.open(currentDownloadUrl, '_blank');
             } else {
                 // Wrong passcode
                 document.getElementById('modalError').textContent = 'Invalid passcode. Please contact us for access.';
