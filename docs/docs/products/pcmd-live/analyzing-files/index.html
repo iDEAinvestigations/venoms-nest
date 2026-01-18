@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-products/pcmd-live/analyzing-files" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Analyzing PCMD Files | Venom Suite Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://apps.ideatech.us/docs/img/mac-venom-icon.png"><meta data-rh="true" name="twitter:image" content="https://apps.ideatech.us/docs/img/mac-venom-icon.png"><meta data-rh="true" property="og:url" content="https://apps.ideatech.us/docs/docs/products/pcmd-live/analyzing-files"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Analyzing PCMD Files | Venom Suite Documentation"><meta data-rh="true" name="description" content="PCMD (Position Connection Management Data) analysis is the core feature of PCMD Live. This guide shows how to upload and analyze carrier call detail records."><meta data-rh="true" property="og:description" content="PCMD (Position Connection Management Data) analysis is the core feature of PCMD Live. This guide shows how to upload and analyze carrier call detail records."><link data-rh="true" rel="icon" href="/docs/img/mac-venom-icon.ico"><link data-rh="true" rel="canonical" href="https://apps.ideatech.us/docs/docs/products/pcmd-live/analyzing-files"><link data-rh="true" rel="alternate" href="https://apps.ideatech.us/docs/docs/products/pcmd-live/analyzing-files" hreflang="en"><link data-rh="true" rel="alternate" href="https://apps.ideatech.us/docs/docs/products/pcmd-live/analyzing-files" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Venom Suite Products","item":"https://apps.ideatech.us/docs/docs/category/venom-suite-products"},{"@type":"ListItem","position":2,"name":"Analyzing PCMD Files","item":"https://apps.ideatech.us/docs/docs/products/pcmd-live/analyzing-files"}]}</script><link rel="stylesheet" href="/docs/assets/css/styles.7c3ab44c.css">
+<script src="/docs/assets/js/runtime~main.772ce8aa.js" defer="defer"></script>
+<script src="/docs/assets/js/main.412a544d.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/docs/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/docs/"><div class="navbar__logo"><img src="/docs/img/logo.svg" alt="Venom Suite Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/docs/img/logo.svg" alt="Venom Suite Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Venom Suite</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/docs/intro">Products</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://ideatech.us" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">iDEA Technology<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/docs/intro"><span title="Welcome to the Venom Suite Documentation Hub" class="linkLabel_WmDU">Welcome to the Venom Suite Documentation Hub</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/docs/docs/category/venom-suite-products"><span title="Venom Suite Products" class="categoryLinkLabel_W154">Venom Suite Products</span></a><button aria-label="Collapse sidebar category &#x27;Venom Suite Products&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/ghost-venom/overview"><span title="Ghost Venom" class="categoryLinkLabel_W154">Ghost Venom</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/macvenom-pro/installation"><span title="MacVenom Pro" class="categoryLinkLabel_W154">MacVenom Pro</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/ip-lizard/installation"><span title="IP Lizard" class="categoryLinkLabel_W154">IP Lizard</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/linkup-elite/installation"><span title="Link Up Elite" class="categoryLinkLabel_W154">Link Up Elite</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/rf-scorpion/installation"><span title="RF Scorpion" class="categoryLinkLabel_W154">RF Scorpion</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/docs/docs/category/srt-lets-talk"><span title="SRT Let&#x27;s Talk" class="categoryLinkLabel_W154">SRT Let&#x27;s Talk</span></a><button aria-label="Collapse sidebar category &#x27;SRT Let&#x27;s Talk&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/quick-start"><span title="Quick Start Guide" class="linkLabel_WmDU">Quick Start Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/overview"><span title="Overview" class="linkLabel_WmDU">Overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/installation"><span title="Installation &amp; Setup" class="linkLabel_WmDU">Installation &amp; Setup</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/features"><span title="Features &amp; Capabilities" class="linkLabel_WmDU">Features &amp; Capabilities</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/sms-commands"><span title="SMS Commands" class="linkLabel_WmDU">SMS Commands</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/troubleshooting"><span title="Troubleshooting" class="linkLabel_WmDU">Troubleshooting</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/settings-guide"><span title="Settings Guide" class="linkLabel_WmDU">Settings Guide</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/toad-cam/installation"><span title="ToadCAM" class="categoryLinkLabel_W154">ToadCAM</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/docs/docs/category/deg-app-tool"><span title="DEG App Tool" class="categoryLinkLabel_W154">DEG App Tool</span></a><button aria-label="Expand sidebar category &#x27;DEG App Tool&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/socialpede/installation"><span title="Socialpede" class="categoryLinkLabel_W154">Socialpede</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/docs/docs/products/pcmd-live/installation"><span title="PCMD Live" class="categoryLinkLabel_W154">PCMD Live</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/pcmd-live/installation"><span title="Installation &amp; License Activation" class="linkLabel_WmDU">Installation &amp; License Activation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/docs/products/pcmd-live/analyzing-files"><span title="Analyzing PCMD Files" class="linkLabel_WmDU">Analyzing PCMD Files</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/pcmd-live/hot-towers"><span title="Hot Towers &amp; Triangulation" class="linkLabel_WmDU">Hot Towers &amp; Triangulation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/pcmd-live/live-ping"><span title="Live Ping Tracking &amp; Saved Addresses" class="linkLabel_WmDU">Live Ping Tracking &amp; Saved Addresses</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/pcmd-live/troubleshooting"><span title="Troubleshooting &amp; Best Practices" class="linkLabel_WmDU">Troubleshooting &amp; Best Practices</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/pcmd-live/overview"><span title="PCMD Live Overview" class="linkLabel_WmDU">PCMD Live Overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/pcmd-live/addresses"><span title="Address Management" class="linkLabel_WmDU">Address Management</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/pcmd-live/best-practices"><span title="Best Practices" class="linkLabel_WmDU">Best Practices</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/pcmd-live/v-strike"><span title="V-Strike" class="linkLabel_WmDU">V-Strike</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/best-practices"><span title="Best Practices" class="linkLabel_WmDU">Best Practices</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/legal"><span title="Legal and Compliance" class="linkLabel_WmDU">Legal and Compliance</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/docs/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/docs/docs/category/venom-suite-products"><span>Venom Suite Products</span></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">PCMD Live</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Analyzing PCMD Files</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Analyzing PCMD Files - Call Detail Record Processing</h1></header>
+<p>PCMD (Position Connection Management Data) analysis is the core feature of PCMD Live. This guide shows how to upload and analyze carrier call detail records.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="understanding-pcmd-data">Understanding PCMD Data<a href="#understanding-pcmd-data" class="hash-link" aria-label="Direct link to Understanding PCMD Data" title="Direct link to Understanding PCMD Data" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-pcmd">What is PCMD?<a href="#what-is-pcmd" class="hash-link" aria-label="Direct link to What is PCMD?" title="Direct link to What is PCMD?" translate="no">​</a></h3>
+<p><strong>PCMD</strong> = Position Connection Management Data</p>
+<p>Call Detail Records that include:</p>
+<ul>
+<li class="">Phone number</li>
+<li class="">Tower used for connection</li>
+<li class="">Tower coordinates (latitude/longitude)</li>
+<li class="">Date and time of connection</li>
+<li class="">Call duration (for calls)</li>
+<li class="">Data volume (for data sessions)</li>
+<li class="">Connection direction (in/outbound)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-pcmd-matters">Why PCMD Matters<a href="#why-pcmd-matters" class="hash-link" aria-label="Direct link to Why PCMD Matters" title="Direct link to Why PCMD Matters" translate="no">​</a></h3>
+<p>PCMD data enables:</p>
+<ul>
+<li class=""><strong>Location Tracking</strong>: See where phone was when connected to towers</li>
+<li class=""><strong>Tower Analysis</strong>: Identify frequently used locations</li>
+<li class=""><strong>Triangulation</strong>: Estimate precise location using multiple towers</li>
+<li class=""><strong>Pattern Recognition</strong>: Understand movement and behavior patterns</li>
+<li class=""><strong>Timeline Creation</strong>: Create activity timeline from records</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="supported-carriers">Supported Carriers<a href="#supported-carriers" class="hash-link" aria-label="Direct link to Supported Carriers" title="Direct link to Supported Carriers" translate="no">​</a></h3>
+<table><thead><tr><th>Carrier</th><th>File Format</th><th>File Type</th></tr></thead><tbody><tr><td><strong>Verizon</strong></td><td>Excel</td><td>.xlsx</td></tr><tr><td><strong>AT&amp;T</strong></td><td>Text/CSV</td><td>.txt, .csv</td></tr><tr><td><strong>T-Mobile</strong></td><td>Excel</td><td>.xlsx, .csv</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getting-pcmd-files">Getting PCMD Files<a href="#getting-pcmd-files" class="hash-link" aria-label="Direct link to Getting PCMD Files" title="Direct link to Getting PCMD Files" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-to-obtain-files">How to Obtain Files<a href="#how-to-obtain-files" class="hash-link" aria-label="Direct link to How to Obtain Files" title="Direct link to How to Obtain Files" translate="no">​</a></h3>
+<p><strong>Legal Methods:</strong></p>
+<ul>
+<li class="">Direct from carrier (if authorized)</li>
+<li class="">Law enforcement requests (with warrant)</li>
+<li class="">Court-ordered discovery</li>
+<li class="">Legal compliance investigations</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="file-types">File Types<a href="#file-types" class="hash-link" aria-label="Direct link to File Types" title="Direct link to File Types" translate="no">​</a></h3>
+<p><strong>Verizon Files:</strong></p>
+<ul>
+<li class="">VoLTE_Call_Detail*.xlsx</li>
+<li class="">RTT_Detail*.xlsx (Real-Time Transfer)</li>
+<li class="">Historical_Call_Detail*.xlsx</li>
+<li class="">IP_Data_Session*.xlsx</li>
+</ul>
+<p><strong>AT&amp;T Files:</strong></p>
+<ul>
+<li class="">ReportLoc_*.txt (NELOS format)</li>
+<li class="">Any tab/comma delimited location file</li>
+</ul>
+<p><strong>T-Mobile Files:</strong></p>
+<ul>
+<li class="">Timing Advance Excel files</li>
+<li class="">CDR Excel files</li>
+<li class="">Data Session Excel files</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="analyzing-pcmd-files">Analyzing PCMD Files<a href="#analyzing-pcmd-files" class="hash-link" aria-label="Direct link to Analyzing PCMD Files" title="Direct link to Analyzing PCMD Files" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-1-select-carrier">Step 1: Select Carrier<a href="#step-1-select-carrier" class="hash-link" aria-label="Direct link to Step 1: Select Carrier" title="Direct link to Step 1: Select Carrier" translate="no">​</a></h3>
+<p><strong>From Home Screen:</strong></p>
+<ol>
+<li class="">Tap <strong>&quot;Analysis&quot;</strong> button</li>
+<li class="">Choose your carrier:<!-- -->
+<ul>
+<li class="">🔵 <strong>VERIZON</strong> (blue) - For Verizon PCMD files</li>
+<li class="">🟦 <strong>AT&amp;T</strong> (cyan) - For AT&amp;T NELOS files</li>
+<li class="">🟥 <strong>T-MOBILE</strong> (pink) - For T-Mobile records</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-2-upload-data-file">Step 2: Upload Data File<a href="#step-2-upload-data-file" class="hash-link" aria-label="Direct link to Step 2: Upload Data File" title="Direct link to Step 2: Upload Data File" translate="no">​</a></h3>
+<p><strong>After selecting carrier:</strong></p>
+<ol>
+<li class="">Tap <strong>&quot;Select PCMD File&quot;</strong> or use drag/drop area</li>
+<li class="">Navigate to your PCMD file location</li>
+<li class="">Select the file:<!-- -->
+<ul>
+<li class="">Verizon: .xlsx files</li>
+<li class="">AT&amp;T: .txt or .csv files</li>
+<li class="">T-Mobile: .xlsx or .csv files</li>
+</ul>
+</li>
+<li class="">Confirm selection</li>
+<li class="">Wait for processing (progress indicator shows)</li>
+</ol>
+<p><strong>File Processing:</strong></p>
+<ul>
+<li class="">Status bar shows upload progress</li>
+<li class="">May take 30 seconds to several minutes</li>
+<li class="">Depends on file size and device speed</li>
+<li class="">Keep app open during processing</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-3-review-results">Step 3: Review Results<a href="#step-3-review-results" class="hash-link" aria-label="Direct link to Step 3: Review Results" title="Direct link to Step 3: Review Results" translate="no">​</a></h3>
+<p>After successful parsing:</p>
+<p><strong>Results Screen Shows:</strong></p>
+<ul>
+<li class="">✅ Record count (total entries)</li>
+<li class="">✅ Date range (earliest to latest)</li>
+<li class="">✅ Phone number analyzed</li>
+<li class="">✅ Processing status</li>
+</ul>
+<p><strong>View Results:</strong></p>
+<ul>
+<li class="">Tap <strong>&quot;View Results&quot;</strong> button</li>
+<li class="">Results display on map with visualization</li>
+<li class="">Multiple tabs available for analysis</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="results-display--maps">Results Display &amp; Maps<a href="#results-display--maps" class="hash-link" aria-label="Direct link to Results Display &amp; Maps" title="Direct link to Results Display &amp; Maps" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="map-view-default">Map View (Default)<a href="#map-view-default" class="hash-link" aria-label="Direct link to Map View (Default)" title="Direct link to Map View (Default)" translate="no">​</a></h3>
+<p>Interactive Google Map showing all data points:</p>
+<p><strong>Layer Toggle Controls (Filter Chips):</strong></p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Towers</strong> - Show/hide tower markers</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Sectors</strong> - Show/hide sector coverage polygons</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Devices</strong> - Show/hide device position markers</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Addresses</strong> - Show/hide saved address markers</li>
+</ul>
+<p><strong>Toggling Layers:</strong></p>
+<ol>
+<li class="">Tap a filter chip to toggle on/off</li>
+<li class="">Active layers are highlighted</li>
+<li class="">Address chip shows overlap count badge</li>
+<li class="">Toggle multiple layers for complex views</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="map-markers">Map Markers<a href="#map-markers" class="hash-link" aria-label="Direct link to Map Markers" title="Direct link to Map Markers" translate="no">​</a></h3>
+<p><strong>Tower Markers:</strong></p>
+<ul>
+<li class="">🔴 <strong>RED pins</strong> = Tower locations</li>
+<li class="">Shows tower location, ID, name</li>
+<li class="">Tap for tower details</li>
+</ul>
+<p><strong>Device Position Markers:</strong></p>
+<ul>
+<li class="">🟢 <strong>GREEN circles</strong> = Inbound calls</li>
+<li class="">🔵 <strong>BLUE circles</strong> = Outbound calls</li>
+<li class="">🟣 <strong>PURPLE circles</strong> = Voicemail</li>
+<li class="">Size indicates RSSI/signal strength</li>
+</ul>
+<p><strong>Address Markers:</strong></p>
+<ul>
+<li class="">🟠 <strong>ORANGE circles</strong> = Address overlaps</li>
+<li class="">Indicates saved addresses within data range</li>
+<li class="">Shows overlap count</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="map-gestures">Map Gestures<a href="#map-gestures" class="hash-link" aria-label="Direct link to Map Gestures" title="Direct link to Map Gestures" translate="no">​</a></h3>
+<table><thead><tr><th>Gesture</th><th>Action</th></tr></thead><tbody><tr><td><strong>Pinch</strong></td><td>Zoom in/out</td></tr><tr><td><strong>Drag</strong></td><td>Pan around map</td></tr><tr><td><strong>Tap marker</strong></td><td>Show info popup</td></tr><tr><td><strong>Long-press marker</strong></td><td>Open context menu</td></tr><tr><td><strong>Tap layer icon</strong></td><td>Toggle layers on/off</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="statistics-card">Statistics Card<a href="#statistics-card" class="hash-link" aria-label="Direct link to Statistics Card" title="Direct link to Statistics Card" translate="no">​</a></h3>
+<p>Displays summary information:</p>
+<ul>
+<li class=""><strong>Total Records</strong>: Number of call/data entries</li>
+<li class=""><strong>Tower Count</strong>: Unique towers used</li>
+<li class=""><strong>Date Range</strong>: From earliest to latest</li>
+<li class=""><strong>Device Activity</strong>: Summary statistics</li>
+<li class=""><strong>Samsung Exclusion Warning</strong>: If applicable</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="understanding-data-points">Understanding Data Points<a href="#understanding-data-points" class="hash-link" aria-label="Direct link to Understanding Data Points" title="Direct link to Understanding Data Points" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-each-data-point-shows">What Each Data Point Shows<a href="#what-each-data-point-shows" class="hash-link" aria-label="Direct link to What Each Data Point Shows" title="Direct link to What Each Data Point Shows" translate="no">​</a></h3>
+<p>Each marker on map represents:</p>
+<table><thead><tr><th>Information</th><th>Meaning</th></tr></thead><tbody><tr><td><strong>Location</strong></td><td>Where tower was located</td></tr><tr><td><strong>Time/Date</strong></td><td>When connection occurred</td></tr><tr><td><strong>Tower ID</strong></td><td>Unique tower identifier</td></tr><tr><td><strong>RSSI</strong></td><td>Signal strength at that time</td></tr><tr><td><strong>Direction</strong></td><td>Call in/out or data session</td></tr><tr><td><strong>Duration</strong></td><td>Length of call or session</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="signal-strength-rssi">Signal Strength (RSSI)<a href="#signal-strength-rssi" class="hash-link" aria-label="Direct link to Signal Strength (RSSI)" title="Direct link to Signal Strength (RSSI)" translate="no">​</a></h3>
+<p>RSSI (Received Signal Strength Indicator) -40 to -140 dBm:</p>
+<table><thead><tr><th>RSSI</th><th>Meaning</th><th>Accuracy</th></tr></thead><tbody><tr><td><strong>-40 to -80 dBm</strong></td><td>Very strong signal</td><td>Good accuracy</td></tr><tr><td><strong>-80 to -100 dBm</strong></td><td>Good signal</td><td>Moderate accuracy</td></tr><tr><td><strong>-100 to -120 dBm</strong></td><td>Fair signal</td><td>Lower accuracy</td></tr><tr><td><strong>-120 to -140 dBm</strong></td><td>Weak signal</td><td>Poor accuracy</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="location-accuracy">Location Accuracy<a href="#location-accuracy" class="hash-link" aria-label="Direct link to Location Accuracy" title="Direct link to Location Accuracy" translate="no">​</a></h3>
+<p><strong>Single Tower:</strong></p>
+<ul>
+<li class="">Approximate location (tower coverage area)</li>
+<li class="">Can be 1-5 miles radius</li>
+<li class="">Used for general area</li>
+</ul>
+<p><strong>Two Towers:</strong></p>
+<ul>
+<li class="">Better approximation (narrowed area)</li>
+<li class="">Can be 0.5-2 miles</li>
+<li class="">More precise estimate</li>
+</ul>
+<p><strong>Three Towers (Triangulation):</strong></p>
+<ul>
+<li class="">Most accurate method</li>
+<li class="">Can be 100-1000 feet in urban areas</li>
+<li class="">Best for precise location</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="analysis-tools">Analysis Tools<a href="#analysis-tools" class="hash-link" aria-label="Direct link to Analysis Tools" title="Direct link to Analysis Tools" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="timeline-view">Timeline View<a href="#timeline-view" class="hash-link" aria-label="Direct link to Timeline View" title="Direct link to Timeline View" translate="no">​</a></h3>
+<p>See chronological activity:</p>
+<ol>
+<li class="">Tap <strong>&quot;Timeline&quot;</strong> tab</li>
+<li class="">Activity displayed chronologically</li>
+<li class="">Shows each connection in order</li>
+<li class="">Click any entry to see on map</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="datetime-filtering">Date/Time Filtering<a href="#datetime-filtering" class="hash-link" aria-label="Direct link to Date/Time Filtering" title="Direct link to Date/Time Filtering" translate="no">​</a></h3>
+<p>Focus on specific time period:</p>
+<ol>
+<li class="">Tap <strong>&quot;Date Range&quot;</strong> filter</li>
+<li class="">Select start date</li>
+<li class="">Select end date</li>
+<li class="">Map updates to show only those dates</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="export-functions">Export Functions<a href="#export-functions" class="hash-link" aria-label="Direct link to Export Functions" title="Direct link to Export Functions" translate="no">​</a></h3>
+<p>Save analysis results:</p>
+<ol>
+<li class="">Tap <strong>&quot;Export&quot;</strong> button</li>
+<li class="">Choose format:<!-- -->
+<ul>
+<li class="">PDF report</li>
+<li class="">CSV spreadsheet</li>
+<li class="">Image snapshot</li>
+</ul>
+</li>
+<li class="">Save to device storage</li>
+<li class="">Share via email/messaging</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="working-with-multiple-files">Working with Multiple Files<a href="#working-with-multiple-files" class="hash-link" aria-label="Direct link to Working with Multiple Files" title="Direct link to Working with Multiple Files" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="analyzing-different-carriers">Analyzing Different Carriers<a href="#analyzing-different-carriers" class="hash-link" aria-label="Direct link to Analyzing Different Carriers" title="Direct link to Analyzing Different Carriers" translate="no">​</a></h3>
+<p>To analyze from different carriers:</p>
+<ol>
+<li class="">Go back to <strong>Analysis</strong> screen</li>
+<li class="">Select different carrier</li>
+<li class="">Upload new file</li>
+<li class="">Previous analysis saved automatically</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="comparing-carriers">Comparing Carriers<a href="#comparing-carriers" class="hash-link" aria-label="Direct link to Comparing Carriers" title="Direct link to Comparing Carriers" translate="no">​</a></h3>
+<p>Some scenarios involve multiple carriers:</p>
+<ol>
+<li class="">Analyze Verizon file first</li>
+<li class="">Note results and towers</li>
+<li class="">Go back to Analysis</li>
+<li class="">Select AT&amp;T</li>
+<li class="">Upload AT&amp;T file</li>
+<li class="">Compare results</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="merging-data-advanced">Merging Data (Advanced)<a href="#merging-data-advanced" class="hash-link" aria-label="Direct link to Merging Data (Advanced)" title="Direct link to Merging Data (Advanced)" translate="no">​</a></h3>
+<p>For comprehensive analysis:</p>
+<ol>
+<li class="">Analyze all available files separately</li>
+<li class="">Take notes/screenshots of results</li>
+<li class="">Document tower locations</li>
+<li class="">Note overlapping areas</li>
+<li class="">Cross-reference for accuracy</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-issues">Common Issues<a href="#common-issues" class="hash-link" aria-label="Direct link to Common Issues" title="Direct link to Common Issues" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="file-wont-load">File Won&#x27;t Load<a href="#file-wont-load" class="hash-link" aria-label="Direct link to File Won&#x27;t Load" title="Direct link to File Won&#x27;t Load" translate="no">​</a></h3>
+<p><strong>Possible causes:</strong></p>
+<ul>
+<li class="">Wrong file format for carrier</li>
+<li class="">File corrupted or incomplete</li>
+<li class="">Storage permission not granted</li>
+<li class="">File in unsupported location</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li class="">Verify file format matches carrier</li>
+<li class="">Ensure file not corrupted (try opening in spreadsheet app)</li>
+<li class="">Grant storage permission</li>
+<li class="">Copy file to Downloads folder</li>
+<li class="">Try again</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="file-processing-too-slow">File Processing Too Slow<a href="#file-processing-too-slow" class="hash-link" aria-label="Direct link to File Processing Too Slow" title="Direct link to File Processing Too Slow" translate="no">​</a></h3>
+<p><strong>Reasons:</strong></p>
+<ul>
+<li class="">Large file (many records)</li>
+<li class="">Slow phone processor</li>
+<li class="">Low available RAM</li>
+<li class="">Other apps running</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li class="">Close other apps</li>
+<li class="">Restart phone</li>
+<li class="">Free up RAM memory</li>
+<li class="">Try smaller file portion</li>
+<li class="">Use newer/faster device</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="map-not-showing-data">Map Not Showing Data<a href="#map-not-showing-data" class="hash-link" aria-label="Direct link to Map Not Showing Data" title="Direct link to Map Not Showing Data" translate="no">​</a></h3>
+<p><strong>Possible causes:</strong></p>
+<ul>
+<li class="">Location services disabled</li>
+<li class="">Map API not responding</li>
+<li class="">GPS not locked</li>
+<li class="">Internet not connected</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li class="">Enable location services</li>
+<li class="">Check internet connection</li>
+<li class="">Move outdoors for GPS lock</li>
+<li class="">Restart app</li>
+<li class="">Try again later</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="incorrect-results">Incorrect Results<a href="#incorrect-results" class="hash-link" aria-label="Direct link to Incorrect Results" title="Direct link to Incorrect Results" translate="no">​</a></h3>
+<p><strong>Why results might be wrong:</strong></p>
+<ul>
+<li class="">Wrong phone number analyzed</li>
+<li class="">Data from different time period</li>
+<li class="">Incorrect carrier selection</li>
+<li class="">File contains mixed data</li>
+<li class="">RSSI inaccuracy</li>
+</ul>
+<p><strong>What to do:</strong></p>
+<ol>
+<li class="">Verify correct file selected</li>
+<li class="">Check phone number in file</li>
+<li class="">Confirm carrier matches file type</li>
+<li class="">Review date range</li>
+<li class="">Cross-reference with V-Strike</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Direct link to Best Practices" title="Direct link to Best Practices" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="data-verification">Data Verification<a href="#data-verification" class="hash-link" aria-label="Direct link to Data Verification" title="Direct link to Data Verification" translate="no">​</a></h3>
+<p>Before using results:</p>
+<ol>
+<li class="">Verify file came from legitimate source</li>
+<li class="">Confirm correct phone number</li>
+<li class="">Check date range matches investigation period</li>
+<li class="">Cross-reference with other evidence</li>
+<li class="">Document all findings</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="security--privacy">Security &amp; Privacy<a href="#security--privacy" class="hash-link" aria-label="Direct link to Security &amp; Privacy" title="Direct link to Security &amp; Privacy" translate="no">​</a></h3>
+<ul>
+<li class="">Don&#x27;t share raw PCMD files</li>
+<li class="">Protect analyzed data</li>
+<li class="">Limit access to results</li>
+<li class="">Delete sensitive files after analysis</li>
+<li class="">Follow all privacy/legal requirements</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="accuracy-considerations">Accuracy Considerations<a href="#accuracy-considerations" class="hash-link" aria-label="Direct link to Accuracy Considerations" title="Direct link to Accuracy Considerations" translate="no">​</a></h3>
+<p>Remember:</p>
+<ul>
+<li class="">PCMD shows tower connections, not exact location</li>
+<li class="">Accuracy varies by tower density</li>
+<li class="">Urban areas more accurate</li>
+<li class="">Rural areas less accurate</li>
+<li class="">Results are approximate</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps" translate="no">​</a></h2>
+<ul>
+<li class="">Learn <a class="" href="/docs/docs/products/pcmd-live/hot-towers">Hot Tower Analysis</a></li>
+<li class="">Try <a class="" href="/docs/docs/products/pcmd-live/v-strike">V-Strike Triangulation</a></li>
+<li class="">Explore <a class="" href="/docs/docs/products/pcmd-live/live-ping">Live Ping Tracking</a></li>
+<li class="">Review <a class="" href="/docs/docs/products/pcmd-live/addresses">Saved Addresses</a></li>
+<li class="">See <a class="" href="/docs/docs/products/pcmd-live/troubleshooting">Troubleshooting Guide</a></li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/products/pcmd-live/analyzing-files.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/docs/products/pcmd-live/installation"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Installation &amp; License Activation</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/docs/products/pcmd-live/hot-towers"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Hot Towers &amp; Triangulation</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#understanding-pcmd-data" class="table-of-contents__link toc-highlight">Understanding PCMD Data</a><ul><li><a href="#what-is-pcmd" class="table-of-contents__link toc-highlight">What is PCMD?</a></li><li><a href="#why-pcmd-matters" class="table-of-contents__link toc-highlight">Why PCMD Matters</a></li><li><a href="#supported-carriers" class="table-of-contents__link toc-highlight">Supported Carriers</a></li></ul></li><li><a href="#getting-pcmd-files" class="table-of-contents__link toc-highlight">Getting PCMD Files</a><ul><li><a href="#how-to-obtain-files" class="table-of-contents__link toc-highlight">How to Obtain Files</a></li><li><a href="#file-types" class="table-of-contents__link toc-highlight">File Types</a></li></ul></li><li><a href="#analyzing-pcmd-files" class="table-of-contents__link toc-highlight">Analyzing PCMD Files</a><ul><li><a href="#step-1-select-carrier" class="table-of-contents__link toc-highlight">Step 1: Select Carrier</a></li><li><a href="#step-2-upload-data-file" class="table-of-contents__link toc-highlight">Step 2: Upload Data File</a></li><li><a href="#step-3-review-results" class="table-of-contents__link toc-highlight">Step 3: Review Results</a></li></ul></li><li><a href="#results-display--maps" class="table-of-contents__link toc-highlight">Results Display &amp; Maps</a><ul><li><a href="#map-view-default" class="table-of-contents__link toc-highlight">Map View (Default)</a></li><li><a href="#map-markers" class="table-of-contents__link toc-highlight">Map Markers</a></li><li><a href="#map-gestures" class="table-of-contents__link toc-highlight">Map Gestures</a></li><li><a href="#statistics-card" class="table-of-contents__link toc-highlight">Statistics Card</a></li></ul></li><li><a href="#understanding-data-points" class="table-of-contents__link toc-highlight">Understanding Data Points</a><ul><li><a href="#what-each-data-point-shows" class="table-of-contents__link toc-highlight">What Each Data Point Shows</a></li><li><a href="#signal-strength-rssi" class="table-of-contents__link toc-highlight">Signal Strength (RSSI)</a></li><li><a href="#location-accuracy" class="table-of-contents__link toc-highlight">Location Accuracy</a></li></ul></li><li><a href="#analysis-tools" class="table-of-contents__link toc-highlight">Analysis Tools</a><ul><li><a href="#timeline-view" class="table-of-contents__link toc-highlight">Timeline View</a></li><li><a href="#datetime-filtering" class="table-of-contents__link toc-highlight">Date/Time Filtering</a></li><li><a href="#export-functions" class="table-of-contents__link toc-highlight">Export Functions</a></li></ul></li><li><a href="#working-with-multiple-files" class="table-of-contents__link toc-highlight">Working with Multiple Files</a><ul><li><a href="#analyzing-different-carriers" class="table-of-contents__link toc-highlight">Analyzing Different Carriers</a></li><li><a href="#comparing-carriers" class="table-of-contents__link toc-highlight">Comparing Carriers</a></li><li><a href="#merging-data-advanced" class="table-of-contents__link toc-highlight">Merging Data (Advanced)</a></li></ul></li><li><a href="#common-issues" class="table-of-contents__link toc-highlight">Common Issues</a><ul><li><a href="#file-wont-load" class="table-of-contents__link toc-highlight">File Won&#39;t Load</a></li><li><a href="#file-processing-too-slow" class="table-of-contents__link toc-highlight">File Processing Too Slow</a></li><li><a href="#map-not-showing-data" class="table-of-contents__link toc-highlight">Map Not Showing Data</a></li><li><a href="#incorrect-results" class="table-of-contents__link toc-highlight">Incorrect Results</a></li></ul></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a><ul><li><a href="#data-verification" class="table-of-contents__link toc-highlight">Data Verification</a></li><li><a href="#security--privacy" class="table-of-contents__link toc-highlight">Security &amp; Privacy</a></li><li><a href="#accuracy-considerations" class="table-of-contents__link toc-highlight">Accuracy Considerations</a></li></ul></li><li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/docs/intro">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/docs/products/ghost-venom/overview">Products</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Contact</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://ideatech.us" target="_blank" rel="noopener noreferrer" class="footer__link-item">Website<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="tel:7088080719" target="_blank" rel="noopener noreferrer" class="footer__link-item">Phone: (708) 808-0719<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Apps</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://apps.ideatech.us" target="_blank" rel="noopener noreferrer" class="footer__link-item">Download Apps<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 iDEA Technology. All rights reserved.</div></div></div></footer></div>
+</body>
+</html>

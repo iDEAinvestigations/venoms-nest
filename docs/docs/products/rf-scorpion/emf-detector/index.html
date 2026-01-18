@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-products/rf-scorpion/emf-detector" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">EMF Detector &amp; Audio Bugs | Venom Suite Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://apps.ideatech.us/docs/img/mac-venom-icon.png"><meta data-rh="true" name="twitter:image" content="https://apps.ideatech.us/docs/img/mac-venom-icon.png"><meta data-rh="true" property="og:url" content="https://apps.ideatech.us/docs/docs/products/rf-scorpion/emf-detector"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="EMF Detector &amp; Audio Bugs | Venom Suite Documentation"><meta data-rh="true" name="description" content="RF Scorpion includes tools for detecting electromagnetic fields (EMF) and hidden microphones used for audio surveillance."><meta data-rh="true" property="og:description" content="RF Scorpion includes tools for detecting electromagnetic fields (EMF) and hidden microphones used for audio surveillance."><link data-rh="true" rel="icon" href="/docs/img/mac-venom-icon.ico"><link data-rh="true" rel="canonical" href="https://apps.ideatech.us/docs/docs/products/rf-scorpion/emf-detector"><link data-rh="true" rel="alternate" href="https://apps.ideatech.us/docs/docs/products/rf-scorpion/emf-detector" hreflang="en"><link data-rh="true" rel="alternate" href="https://apps.ideatech.us/docs/docs/products/rf-scorpion/emf-detector" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Venom Suite Products","item":"https://apps.ideatech.us/docs/docs/category/venom-suite-products"},{"@type":"ListItem","position":2,"name":"EMF Detector & Audio Bugs","item":"https://apps.ideatech.us/docs/docs/products/rf-scorpion/emf-detector"}]}</script><link rel="stylesheet" href="/docs/assets/css/styles.7c3ab44c.css">
+<script src="/docs/assets/js/runtime~main.772ce8aa.js" defer="defer"></script>
+<script src="/docs/assets/js/main.412a544d.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/docs/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/docs/"><div class="navbar__logo"><img src="/docs/img/logo.svg" alt="Venom Suite Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/docs/img/logo.svg" alt="Venom Suite Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Venom Suite</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/docs/intro">Products</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://ideatech.us" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">iDEA Technology<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/docs/intro"><span title="Welcome to the Venom Suite Documentation Hub" class="linkLabel_WmDU">Welcome to the Venom Suite Documentation Hub</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/docs/docs/category/venom-suite-products"><span title="Venom Suite Products" class="categoryLinkLabel_W154">Venom Suite Products</span></a><button aria-label="Collapse sidebar category &#x27;Venom Suite Products&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/ghost-venom/overview"><span title="Ghost Venom" class="categoryLinkLabel_W154">Ghost Venom</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/macvenom-pro/installation"><span title="MacVenom Pro" class="categoryLinkLabel_W154">MacVenom Pro</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/ip-lizard/installation"><span title="IP Lizard" class="categoryLinkLabel_W154">IP Lizard</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/linkup-elite/installation"><span title="Link Up Elite" class="categoryLinkLabel_W154">Link Up Elite</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/docs/docs/products/rf-scorpion/installation"><span title="RF Scorpion" class="categoryLinkLabel_W154">RF Scorpion</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/rf-scorpion/installation"><span title="Installation &amp; License Activation" class="linkLabel_WmDU">Installation &amp; License Activation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/rf-scorpion/tower-survey"><span title="Tower Survey Guide" class="linkLabel_WmDU">Tower Survey Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/rf-scorpion/gps-trackers"><span title="GPS Trackers &amp; Skimmers Detection" class="linkLabel_WmDU">GPS Trackers &amp; Skimmers Detection</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/docs/products/rf-scorpion/emf-detector"><span title="EMF Detector &amp; Audio Bugs" class="linkLabel_WmDU">EMF Detector &amp; Audio Bugs</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/rf-scorpion/overview"><span title="RF Scorpion Overview" class="linkLabel_WmDU">RF Scorpion Overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/rf-scorpion/troubleshooting"><span title="Troubleshooting &amp; Tips" class="linkLabel_WmDU">Troubleshooting &amp; Tips</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/rf-scorpion/audio-bugs"><span title="Audio Bugs Detection" class="linkLabel_WmDU">Audio Bugs Detection</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/rf-scorpion/best-practices"><span title="Best Practices" class="linkLabel_WmDU">Best Practices</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/rf-scorpion/getting-started"><span title="Getting Started" class="linkLabel_WmDU">Getting Started</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/docs/docs/category/srt-lets-talk"><span title="SRT Let&#x27;s Talk" class="categoryLinkLabel_W154">SRT Let&#x27;s Talk</span></a><button aria-label="Collapse sidebar category &#x27;SRT Let&#x27;s Talk&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/quick-start"><span title="Quick Start Guide" class="linkLabel_WmDU">Quick Start Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/overview"><span title="Overview" class="linkLabel_WmDU">Overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/installation"><span title="Installation &amp; Setup" class="linkLabel_WmDU">Installation &amp; Setup</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/features"><span title="Features &amp; Capabilities" class="linkLabel_WmDU">Features &amp; Capabilities</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/sms-commands"><span title="SMS Commands" class="linkLabel_WmDU">SMS Commands</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/troubleshooting"><span title="Troubleshooting" class="linkLabel_WmDU">Troubleshooting</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/settings-guide"><span title="Settings Guide" class="linkLabel_WmDU">Settings Guide</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/toad-cam/installation"><span title="ToadCAM" class="categoryLinkLabel_W154">ToadCAM</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/docs/docs/category/deg-app-tool"><span title="DEG App Tool" class="categoryLinkLabel_W154">DEG App Tool</span></a><button aria-label="Expand sidebar category &#x27;DEG App Tool&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/socialpede/installation"><span title="Socialpede" class="categoryLinkLabel_W154">Socialpede</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/pcmd-live/installation"><span title="PCMD Live" class="categoryLinkLabel_W154">PCMD Live</span></a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/best-practices"><span title="Best Practices" class="linkLabel_WmDU">Best Practices</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/legal"><span title="Legal and Compliance" class="linkLabel_WmDU">Legal and Compliance</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/docs/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/docs/docs/category/venom-suite-products"><span>Venom Suite Products</span></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">RF Scorpion</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">EMF Detector &amp; Audio Bugs</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>EMF Detector &amp; Audio Bug Detection</h1></header>
+<p>RF Scorpion includes tools for detecting electromagnetic fields (EMF) and hidden microphones used for audio surveillance.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="emf-detector---electromagnetic-field-detection">EMF Detector - Electromagnetic Field Detection<a href="#emf-detector---electromagnetic-field-detection" class="hash-link" aria-label="Direct link to EMF Detector - Electromagnetic Field Detection" title="Direct link to EMF Detector - Electromagnetic Field Detection" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-emf">What is EMF?<a href="#what-is-emf" class="hash-link" aria-label="Direct link to What is EMF?" title="Direct link to What is EMF?" translate="no">​</a></h3>
+<p>EMF (Electromagnetic Field) is radiation produced by electronic devices:</p>
+<ul>
+<li class=""><strong>Sources</strong>: Phones, Wi-Fi routers, power lines, hidden surveillance devices</li>
+<li class=""><strong>Safety Concern</strong>: High EMF exposure may be hazardous</li>
+<li class=""><strong>Detection Value</strong>: Unexpected EMF hotspots may indicate hidden equipment</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-emf-detection-works">How EMF Detection Works<a href="#how-emf-detection-works" class="hash-link" aria-label="Direct link to How EMF Detection Works" title="Direct link to How EMF Detection Works" translate="no">​</a></h3>
+<p>RF Scorpion uses your phone&#x27;s sensors to measure electromagnetic radiation levels:</p>
+<ul>
+<li class=""><strong>Measurement Unit</strong>: Milligauss (mG) or Tesla (T)</li>
+<li class=""><strong>Typical Background</strong>: 0.5-2 mG</li>
+<li class=""><strong>High Risk</strong>: Above 5 mG continuously</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="opening-emf-detector">Opening EMF Detector<a href="#opening-emf-detector" class="hash-link" aria-label="Direct link to Opening EMF Detector" title="Direct link to Opening EMF Detector" translate="no">​</a></h3>
+<ol>
+<li class="">From main menu, tap <strong>EMF Detector</strong> tab</li>
+<li class="">Real-time EMF measurement displays</li>
+<li class="">Readings update continuously as you move</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="understanding-emf-readings">Understanding EMF Readings<a href="#understanding-emf-readings" class="hash-link" aria-label="Direct link to Understanding EMF Readings" title="Direct link to Understanding EMF Readings" translate="no">​</a></h3>
+<table><thead><tr><th>Reading (mG)</th><th>Level</th><th>Meaning</th></tr></thead><tbody><tr><td>0-2</td><td><strong>Low</strong></td><td>Normal background radiation</td></tr><tr><td>2-5</td><td><strong>Medium</strong></td><td>Elevated, but normal near electronics</td></tr><tr><td>5-10</td><td><strong>High</strong></td><td>Potential concern</td></tr><tr><td>10+</td><td><strong>Very High</strong></td><td>Significant EMF source nearby</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="hotspot-identification">Hotspot Identification<a href="#hotspot-identification" class="hash-link" aria-label="Direct link to Hotspot Identification" title="Direct link to Hotspot Identification" translate="no">​</a></h3>
+<p><strong>The goal is to locate EMF hotspots:</strong></p>
+<ol>
+<li class=""><strong>Get Baseline</strong>: Record normal EMF in safe area</li>
+<li class=""><strong>Scan Area</strong>: Move around slowly</li>
+<li class=""><strong>Identify Spikes</strong>: Note locations where reading increases</li>
+<li class=""><strong>Map Hotspots</strong>: Mark high EMF areas on map</li>
+<li class=""><strong>Investigate Sources</strong>: Find what&#x27;s producing the field</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-emf-sources">Common EMF Sources<a href="#common-emf-sources" class="hash-link" aria-label="Direct link to Common EMF Sources" title="Direct link to Common EMF Sources" translate="no">​</a></h3>
+<p><strong>Legitimate Sources:</strong></p>
+<ul>
+<li class="">🔌 Electrical outlets and wiring</li>
+<li class="">📱 Smartphones and chargers</li>
+<li class="">🛜 Wi-Fi routers and base stations</li>
+<li class="">📺 Television and microwave ovens</li>
+<li class="">🔋 Laptop chargers and power supplies</li>
+<li class="">💡 Fluorescent lights</li>
+</ul>
+<p><strong>Suspicious Sources:</strong></p>
+<ul>
+<li class="">⚠️ Hidden devices producing unexpected EMF</li>
+<li class="">⚠️ Surveillance equipment in walls</li>
+<li class="">⚠️ Hidden listening devices</li>
+<li class="">⚠️ Tracking devices with RF components</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="risk-assessment">Risk Assessment<a href="#risk-assessment" class="hash-link" aria-label="Direct link to Risk Assessment" title="Direct link to Risk Assessment" translate="no">​</a></h3>
+<p><strong>Low Risk Indicators:</strong></p>
+<ul>
+<li class="">✅ EMF clustered near known electronics</li>
+<li class="">✅ Consistent readings when moving away</li>
+<li class="">✅ Expected sources (lights, outlets)</li>
+</ul>
+<p><strong>High Risk Indicators:</strong></p>
+<ul>
+<li class="">❌ Unexplained EMF hotspots</li>
+<li class="">❌ EMF in unusual locations</li>
+<li class="">❌ Readings spike in specific spots</li>
+<li class="">❌ Persistent high readings in closed areas</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="real-time-graphing">Real-Time Graphing<a href="#real-time-graphing" class="hash-link" aria-label="Direct link to Real-Time Graphing" title="Direct link to Real-Time Graphing" translate="no">​</a></h3>
+<p>EMF Detector shows:</p>
+<ul>
+<li class=""><strong>Live Graph</strong>: EMF levels over time</li>
+<li class=""><strong>Peak Detection</strong>: Highest readings shown</li>
+<li class=""><strong>Trend Analysis</strong>: See if levels rising/falling</li>
+<li class=""><strong>Historical Data</strong>: View past measurements</li>
+</ul>
+<p><strong>To Use Graph:</strong></p>
+<ol>
+<li class="">Start EMF scan</li>
+<li class="">Watch graph update in real-time</li>
+<li class="">Observe peaks and valleys</li>
+<li class="">Note timing of high readings</li>
+<li class="">Correlate with your movement</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="audio-bug-detection-new-in-v20">Audio Bug Detection (NEW in v2.0)<a href="#audio-bug-detection-new-in-v20" class="hash-link" aria-label="Direct link to Audio Bug Detection (NEW in v2.0)" title="Direct link to Audio Bug Detection (NEW in v2.0)" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-audio-surveillance">What is Audio Surveillance?<a href="#what-is-audio-surveillance" class="hash-link" aria-label="Direct link to What is Audio Surveillance?" title="Direct link to What is Audio Surveillance?" translate="no">​</a></h3>
+<p>Hidden microphones or audio recording devices used for:</p>
+<ul>
+<li class="">Eavesdropping on conversations</li>
+<li class="">Recording sensitive information</li>
+<li class="">Corporate espionage</li>
+<li class="">Unauthorized surveillance</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="detection-methods">Detection Methods<a href="#detection-methods" class="hash-link" aria-label="Direct link to Detection Methods" title="Direct link to Detection Methods" translate="no">​</a></h3>
+<p>RF Scorpion detects audio bugs through:</p>
+<p><strong>Microphone Detection:</strong></p>
+<ul>
+<li class="">Identifies hidden microphones</li>
+<li class="">Detects microphone power signatures</li>
+<li class="">Locates active recording devices</li>
+</ul>
+<p><strong>Audio Frequency Analysis:</strong></p>
+<ul>
+<li class="">Analyzes RF audio transmission</li>
+<li class="">Detects wireless audio transmission</li>
+<li class="">Identifies frequency bands used</li>
+</ul>
+<p><strong>Bug Classification:</strong></p>
+<ul>
+<li class="">Determines device type</li>
+<li class="">Identifies surveillance equipment</li>
+<li class="">Assesses threat level</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-to-scan-for-audio-bugs">How to Scan for Audio Bugs<a href="#how-to-scan-for-audio-bugs" class="hash-link" aria-label="Direct link to How to Scan for Audio Bugs" title="Direct link to How to Scan for Audio Bugs" translate="no">​</a></h3>
+<p><strong>1. Open Audio Bugs Tab</strong></p>
+<ul>
+<li class="">From main menu, tap <strong>Audio Bugs</strong> tab</li>
+</ul>
+<p><strong>2. Start Scan</strong></p>
+<ul>
+<li class="">Tap <strong>&quot;SCAN ROOM&quot;</strong> button</li>
+<li class="">App scans for:<!-- -->
+<ul>
+<li class="">Microphone components</li>
+<li class="">Audio transmission frequencies</li>
+<li class="">Recording devices</li>
+<li class="">Wireless microphones</li>
+</ul>
+</li>
+</ul>
+<p><strong>3. Review Results</strong></p>
+<p>Results show:</p>
+<ul>
+<li class=""><strong>Detected Devices</strong>: Any microphones found</li>
+<li class=""><strong>Device Type</strong>: Classification of equipment</li>
+<li class=""><strong>Location Heatmap</strong>: Where in room device detected</li>
+<li class=""><strong>Confidence Level</strong>: How certain detection is</li>
+<li class=""><strong>Frequency</strong>: RF frequency if wireless</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="interpreting-results">Interpreting Results<a href="#interpreting-results" class="hash-link" aria-label="Direct link to Interpreting Results" title="Direct link to Interpreting Results" translate="no">​</a></h3>
+<table><thead><tr><th>Confidence</th><th>Meaning</th><th>Action</th></tr></thead><tbody><tr><td><strong>Very High (95%+)</strong></td><td>Almost certainly a bug</td><td>Investigate immediately</td></tr><tr><td><strong>High (75-95%)</strong></td><td>Likely audio bug</td><td>Inspect location carefully</td></tr><tr><td><strong>Medium (50-75%)</strong></td><td>Possible bug</td><td>Manual inspection needed</td></tr><tr><td><strong>Low (Below 50%)</strong></td><td>Uncertain</td><td>Likely false positive</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="location-heatmap">Location Heatmap<a href="#location-heatmap" class="hash-link" aria-label="Direct link to Location Heatmap" title="Direct link to Location Heatmap" translate="no">​</a></h3>
+<p>The heatmap shows:</p>
+<ul>
+<li class="">🔴 <strong>Red Areas</strong> - Highest probability bug location</li>
+<li class="">🟡 <strong>Yellow Areas</strong> - Moderate probability</li>
+<li class="">🟢 <strong>Green Areas</strong> - Lower probability</li>
+</ul>
+<p><strong>To Use Heatmap:</strong></p>
+<ol>
+<li class="">Review color zones</li>
+<li class="">Red zones are most likely bug locations</li>
+<li class="">Physically inspect red zone areas</li>
+<li class="">Look for unusual devices or components</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="recording-detection">Recording Detection<a href="#recording-detection" class="hash-link" aria-label="Direct link to Recording Detection" title="Direct link to Recording Detection" translate="no">​</a></h3>
+<p>The app can detect:</p>
+<ul>
+<li class="">✅ Active audio recording</li>
+<li class="">✅ Microphone activation patterns</li>
+<li class="">✅ Recording device indicators</li>
+<li class="">✅ Audio transmission signals</li>
+</ul>
+<p><strong>How Recording Detection Works:</strong></p>
+<ol>
+<li class="">Monitors for microphone power usage</li>
+<li class="">Detects characteristic RF patterns</li>
+<li class="">Identifies recording frequency</li>
+<li class="">Alerts if recording starts</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="manual-inspection-after-scan">Manual Inspection After Scan<a href="#manual-inspection-after-scan" class="hash-link" aria-label="Direct link to Manual Inspection After Scan" title="Direct link to Manual Inspection After Scan" translate="no">​</a></h3>
+<p>If app detects possible bugs:</p>
+<p><strong>Common Hidden Camera Locations:</strong></p>
+<ul>
+<li class="">📌 Smoke detectors</li>
+<li class="">🕐 Clock radios</li>
+<li class="">🖼️ Picture frames</li>
+<li class="">💡 Light fixtures</li>
+<li class="">🪲 Air vents</li>
+<li class="">🔌 Electrical outlets</li>
+<li class="">🎧 Speaker systems</li>
+<li class="">📷 Decorative objects</li>
+</ul>
+<p><strong>Visual Inspection Checklist:</strong></p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Check for extra wires</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Look for small holes or lenses</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Inspect for unusual weight in objects</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Check for fresh construction/modifications</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Look for objects facing seating areas</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Check behind mirrors and glass</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Examine electronics for modifications</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Direct link to Best Practices" title="Direct link to Best Practices" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="regular-scanning">Regular Scanning<a href="#regular-scanning" class="hash-link" aria-label="Direct link to Regular Scanning" title="Direct link to Regular Scanning" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Home</strong>: Weekly baseline check</li>
+<li class=""><strong>Work</strong>: Before sensitive meetings</li>
+<li class=""><strong>Hotels</strong>: Upon arrival in room</li>
+<li class=""><strong>Conference Rooms</strong>: Before confidential meetings</li>
+<li class=""><strong>Vehicles</strong>: Monthly security checks</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="documentation">Documentation<a href="#documentation" class="hash-link" aria-label="Direct link to Documentation" title="Direct link to Documentation" translate="no">​</a></h3>
+<p>When detecting suspicious signals:</p>
+<ol>
+<li class="">Take screenshots of readings</li>
+<li class="">Note exact location</li>
+<li class="">Record time and date</li>
+<li class="">Document all visual findings</li>
+<li class="">Preserve evidence for authorities</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="safety-precautions">Safety Precautions<a href="#safety-precautions" class="hash-link" aria-label="Direct link to Safety Precautions" title="Direct link to Safety Precautions" translate="no">​</a></h3>
+<ul>
+<li class="">⚠️ <strong>Do not disassemble unknown devices</strong> - May be dangerous</li>
+<li class="">⚠️ <strong>Do not touch suspicious objects</strong> - May be evidence</li>
+<li class="">⚠️ <strong>Avoid signal interference</strong> - Turn off other devices for cleaner scan</li>
+<li class="">⚠️ <strong>Use in secure location</strong> - Scanning may alert device operators</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="multiple-scans">Multiple Scans<a href="#multiple-scans" class="hash-link" aria-label="Direct link to Multiple Scans" title="Direct link to Multiple Scans" translate="no">​</a></h3>
+<ul>
+<li class="">Scan multiple times for confirmation</li>
+<li class="">Scan at different times of day</li>
+<li class="">Move slowly through area for accuracy</li>
+<li class="">Use graph data for trending</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="limitations">Limitations<a href="#limitations" class="hash-link" aria-label="Direct link to Limitations" title="Direct link to Limitations" translate="no">​</a></h2>
+<p>⚠️ <strong>Phone Sensors</strong></p>
+<ul>
+<li class="">Sensitivity varies by phone model</li>
+<li class="">Some phones have better EMF sensors</li>
+<li class="">Sensor placement varies</li>
+</ul>
+<p>⚠️ <strong>Frequency Coverage</strong></p>
+<ul>
+<li class="">Can detect common microphone frequencies</li>
+<li class="">May miss devices on exotic frequencies</li>
+<li class="">Shielded devices harder to detect</li>
+</ul>
+<p>⚠️ <strong>False Positives</strong></p>
+<ul>
+<li class="">Legitimate electronics may trigger detection</li>
+<li class="">Wi-Fi routers produce RF signals</li>
+<li class="">Cell towers nearby affect readings</li>
+</ul>
+<p>⚠️ <strong>Detection Range</strong></p>
+<ul>
+<li class="">Range depends on device power</li>
+<li class="">Weak devices harder to detect</li>
+<li class="">Shielding reduces detection range</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="troubleshooting">Troubleshooting<a href="#troubleshooting" class="hash-link" aria-label="Direct link to Troubleshooting" title="Direct link to Troubleshooting" translate="no">​</a></h2>
+<p><strong>Scan finds high EMF everywhere:</strong></p>
+<ul>
+<li class="">This is normal in urban areas</li>
+<li class="">Power lines and networks create background EMF</li>
+<li class="">Compare to baseline in different location</li>
+<li class="">Focus on unexpected hotspots</li>
+</ul>
+<p><strong>Audio bug scan has high false positive rate:</strong></p>
+<ul>
+<li class="">Move to quieter location (reduces interference)</li>
+<li class="">Turn off other wireless devices</li>
+<li class="">Restart app and rescan</li>
+<li class="">Use manual inspection to confirm findings</li>
+</ul>
+<p><strong>Readings seem inaccurate:</strong></p>
+<ul>
+<li class="">Different phones have different sensor quality</li>
+<li class="">Sensor may need calibration</li>
+<li class="">Try scanning in known low-EMF area</li>
+<li class="">Compare results with professional equipment if critical</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps" translate="no">​</a></h2>
+<ul>
+<li class="">Learn <a class="" href="/docs/docs/products/rf-scorpion/tower-survey">Tower Survey Basics</a></li>
+<li class="">Review <a class="" href="/docs/docs/products/rf-scorpion/gps-trackers">GPS Tracker Detection</a></li>
+<li class="">See <a class="" href="/docs/docs/products/rf-scorpion/troubleshooting">Troubleshooting Guide</a></li>
+<li class="">Check <a class="" href="/docs/docs/products/rf-scorpion/best-practices">Best Practices Guide</a></li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/products/rf-scorpion/emf-detector.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/docs/products/rf-scorpion/gps-trackers"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">GPS Trackers &amp; Skimmers Detection</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/docs/products/rf-scorpion/overview"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">RF Scorpion Overview</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#emf-detector---electromagnetic-field-detection" class="table-of-contents__link toc-highlight">EMF Detector - Electromagnetic Field Detection</a><ul><li><a href="#what-is-emf" class="table-of-contents__link toc-highlight">What is EMF?</a></li><li><a href="#how-emf-detection-works" class="table-of-contents__link toc-highlight">How EMF Detection Works</a></li><li><a href="#opening-emf-detector" class="table-of-contents__link toc-highlight">Opening EMF Detector</a></li><li><a href="#understanding-emf-readings" class="table-of-contents__link toc-highlight">Understanding EMF Readings</a></li><li><a href="#hotspot-identification" class="table-of-contents__link toc-highlight">Hotspot Identification</a></li><li><a href="#common-emf-sources" class="table-of-contents__link toc-highlight">Common EMF Sources</a></li><li><a href="#risk-assessment" class="table-of-contents__link toc-highlight">Risk Assessment</a></li><li><a href="#real-time-graphing" class="table-of-contents__link toc-highlight">Real-Time Graphing</a></li></ul></li><li><a href="#audio-bug-detection-new-in-v20" class="table-of-contents__link toc-highlight">Audio Bug Detection (NEW in v2.0)</a><ul><li><a href="#what-is-audio-surveillance" class="table-of-contents__link toc-highlight">What is Audio Surveillance?</a></li><li><a href="#detection-methods" class="table-of-contents__link toc-highlight">Detection Methods</a></li><li><a href="#how-to-scan-for-audio-bugs" class="table-of-contents__link toc-highlight">How to Scan for Audio Bugs</a></li><li><a href="#interpreting-results" class="table-of-contents__link toc-highlight">Interpreting Results</a></li><li><a href="#location-heatmap" class="table-of-contents__link toc-highlight">Location Heatmap</a></li><li><a href="#recording-detection" class="table-of-contents__link toc-highlight">Recording Detection</a></li><li><a href="#manual-inspection-after-scan" class="table-of-contents__link toc-highlight">Manual Inspection After Scan</a></li></ul></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a><ul><li><a href="#regular-scanning" class="table-of-contents__link toc-highlight">Regular Scanning</a></li><li><a href="#documentation" class="table-of-contents__link toc-highlight">Documentation</a></li><li><a href="#safety-precautions" class="table-of-contents__link toc-highlight">Safety Precautions</a></li><li><a href="#multiple-scans" class="table-of-contents__link toc-highlight">Multiple Scans</a></li></ul></li><li><a href="#limitations" class="table-of-contents__link toc-highlight">Limitations</a></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a></li><li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/docs/intro">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/docs/products/ghost-venom/overview">Products</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Contact</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://ideatech.us" target="_blank" rel="noopener noreferrer" class="footer__link-item">Website<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="tel:7088080719" target="_blank" rel="noopener noreferrer" class="footer__link-item">Phone: (708) 808-0719<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Apps</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://apps.ideatech.us" target="_blank" rel="noopener noreferrer" class="footer__link-item">Download Apps<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 iDEA Technology. All rights reserved.</div></div></div></footer></div>
+</body>
+</html>

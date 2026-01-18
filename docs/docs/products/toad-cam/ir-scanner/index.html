@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-products/toad-cam/ir-scanner" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">IR Camera Scanner Guide | Venom Suite Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://apps.ideatech.us/docs/img/mac-venom-icon.png"><meta data-rh="true" name="twitter:image" content="https://apps.ideatech.us/docs/img/mac-venom-icon.png"><meta data-rh="true" property="og:url" content="https://apps.ideatech.us/docs/docs/products/toad-cam/ir-scanner"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="IR Camera Scanner Guide | Venom Suite Documentation"><meta data-rh="true" name="description" content="The IR Camera Scanner is the core feature of ToadCAM that helps detect hidden cameras in rooms and spaces using your phone&#x27;s infrared capabilities."><meta data-rh="true" property="og:description" content="The IR Camera Scanner is the core feature of ToadCAM that helps detect hidden cameras in rooms and spaces using your phone&#x27;s infrared capabilities."><link data-rh="true" rel="icon" href="/docs/img/mac-venom-icon.ico"><link data-rh="true" rel="canonical" href="https://apps.ideatech.us/docs/docs/products/toad-cam/ir-scanner"><link data-rh="true" rel="alternate" href="https://apps.ideatech.us/docs/docs/products/toad-cam/ir-scanner" hreflang="en"><link data-rh="true" rel="alternate" href="https://apps.ideatech.us/docs/docs/products/toad-cam/ir-scanner" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Venom Suite Products","item":"https://apps.ideatech.us/docs/docs/category/venom-suite-products"},{"@type":"ListItem","position":2,"name":"IR Camera Scanner Guide","item":"https://apps.ideatech.us/docs/docs/products/toad-cam/ir-scanner"}]}</script><link rel="stylesheet" href="/docs/assets/css/styles.7c3ab44c.css">
+<script src="/docs/assets/js/runtime~main.772ce8aa.js" defer="defer"></script>
+<script src="/docs/assets/js/main.412a544d.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/docs/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/docs/"><div class="navbar__logo"><img src="/docs/img/logo.svg" alt="Venom Suite Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/docs/img/logo.svg" alt="Venom Suite Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Venom Suite</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/docs/intro">Products</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://ideatech.us" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">iDEA Technology<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/docs/intro"><span title="Welcome to the Venom Suite Documentation Hub" class="linkLabel_WmDU">Welcome to the Venom Suite Documentation Hub</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/docs/docs/category/venom-suite-products"><span title="Venom Suite Products" class="categoryLinkLabel_W154">Venom Suite Products</span></a><button aria-label="Collapse sidebar category &#x27;Venom Suite Products&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/ghost-venom/overview"><span title="Ghost Venom" class="categoryLinkLabel_W154">Ghost Venom</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/macvenom-pro/installation"><span title="MacVenom Pro" class="categoryLinkLabel_W154">MacVenom Pro</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/ip-lizard/installation"><span title="IP Lizard" class="categoryLinkLabel_W154">IP Lizard</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/linkup-elite/installation"><span title="Link Up Elite" class="categoryLinkLabel_W154">Link Up Elite</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/rf-scorpion/installation"><span title="RF Scorpion" class="categoryLinkLabel_W154">RF Scorpion</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/docs/docs/category/srt-lets-talk"><span title="SRT Let&#x27;s Talk" class="categoryLinkLabel_W154">SRT Let&#x27;s Talk</span></a><button aria-label="Collapse sidebar category &#x27;SRT Let&#x27;s Talk&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/quick-start"><span title="Quick Start Guide" class="linkLabel_WmDU">Quick Start Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/overview"><span title="Overview" class="linkLabel_WmDU">Overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/installation"><span title="Installation &amp; Setup" class="linkLabel_WmDU">Installation &amp; Setup</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/features"><span title="Features &amp; Capabilities" class="linkLabel_WmDU">Features &amp; Capabilities</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/sms-commands"><span title="SMS Commands" class="linkLabel_WmDU">SMS Commands</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/troubleshooting"><span title="Troubleshooting" class="linkLabel_WmDU">Troubleshooting</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/srt-lets-talk/settings-guide"><span title="Settings Guide" class="linkLabel_WmDU">Settings Guide</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/docs/docs/products/toad-cam/installation"><span title="ToadCAM" class="categoryLinkLabel_W154">ToadCAM</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/toad-cam/installation"><span title="Installation &amp; Setup" class="linkLabel_WmDU">Installation &amp; Setup</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/docs/products/toad-cam/ir-scanner"><span title="IR Camera Scanner Guide" class="linkLabel_WmDU">IR Camera Scanner Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/toad-cam/nearby-cameras"><span title="Finding Nearby Cameras" class="linkLabel_WmDU">Finding Nearby Cameras</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/toad-cam/alpr-map"><span title="DeFlock ALPR &amp; Surveillance Mapping" class="linkLabel_WmDU">DeFlock ALPR &amp; Surveillance Mapping</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/toad-cam/overview"><span title="ToadCAM Overview" class="linkLabel_WmDU">ToadCAM Overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/toad-cam/troubleshooting"><span title="Tips &amp; Troubleshooting" class="linkLabel_WmDU">Tips &amp; Troubleshooting</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/toad-cam/tips"><span title="Tips and Tricks" class="linkLabel_WmDU">Tips and Tricks</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/docs/docs/category/deg-app-tool"><span title="DEG App Tool" class="categoryLinkLabel_W154">DEG App Tool</span></a><button aria-label="Expand sidebar category &#x27;DEG App Tool&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/socialpede/installation"><span title="Socialpede" class="categoryLinkLabel_W154">Socialpede</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/docs/products/pcmd-live/installation"><span title="PCMD Live" class="categoryLinkLabel_W154">PCMD Live</span></a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/best-practices"><span title="Best Practices" class="linkLabel_WmDU">Best Practices</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/docs/products/legal"><span title="Legal and Compliance" class="linkLabel_WmDU">Legal and Compliance</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/docs/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/docs/docs/category/venom-suite-products"><span>Venom Suite Products</span></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">ToadCAM</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">IR Camera Scanner Guide</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>IR Camera Scanner - Detecting Hidden Cameras with Infrared</h1></header>
+<p>The IR Camera Scanner is the core feature of ToadCAM that helps detect hidden cameras in rooms and spaces using your phone&#x27;s infrared capabilities.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-it-works">How It Works<a href="#how-it-works" class="hash-link" aria-label="Direct link to How It Works" title="Direct link to How It Works" translate="no">​</a></h2>
+<p>Most hidden cameras use infrared (IR) LEDs for night vision:</p>
+<ul>
+<li class=""><strong>Humans can&#x27;t see IR</strong>: But smartphone cameras can detect it</li>
+<li class=""><strong>IR LEDs appear bright</strong>: On your phone screen as glowing spots</li>
+<li class=""><strong>Camera lenses reflect</strong>: Flash and IR filters make them obvious</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-ir-works">Why IR Works<a href="#why-ir-works" class="hash-link" aria-label="Direct link to Why IR Works" title="Direct link to Why IR Works" translate="no">​</a></h3>
+<ul>
+<li class="">Hidden cameras in smoke detectors, clocks, USB chargers all use IR</li>
+<li class="">IR LEDs glow brightly when viewed through camera</li>
+<li class="">Most phone cameras are naturally IR-sensitive</li>
+<li class="">Even in daylight, IR LEDs are detectable</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="opening-the-scanner">Opening the Scanner<a href="#opening-the-scanner" class="hash-link" aria-label="Direct link to Opening the Scanner" title="Direct link to Opening the Scanner" translate="no">​</a></h2>
+<p><strong>From Main Menu:</strong></p>
+<ol>
+<li class="">Tap <strong>&quot;START SCAN&quot;</strong> (green button)</li>
+<li class="">Live camera feed appears</li>
+<li class="">You&#x27;ll see the room in normal view</li>
+</ol>
+<p><strong>Control Buttons at Bottom:</strong></p>
+<ul>
+<li class=""><strong>FILTER</strong> - Change IR detection mode</li>
+<li class=""><strong>FLASH</strong> - Toggle strobe light</li>
+<li class=""><strong>AI</strong> - Enable AI detection</li>
+<li class=""><strong>SNAPSHOT</strong> - Capture findings</li>
+<li class=""><strong>X</strong> - Close scanner</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="filter-modes">Filter Modes<a href="#filter-modes" class="hash-link" aria-label="Direct link to Filter Modes" title="Direct link to Filter Modes" translate="no">​</a></h2>
+<p>The <strong>FILTER</strong> button cycles through different viewing modes. Tap it repeatedly to cycle.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="filter-off-normal-view">Filter: OFF (Normal View)<a href="#filter-off-normal-view" class="hash-link" aria-label="Direct link to Filter: OFF (Normal View)" title="Direct link to Filter: OFF (Normal View)" translate="no">​</a></h3>
+<ul>
+<li class="">Standard camera view</li>
+<li class="">No special effects</li>
+<li class="">Good for getting oriented</li>
+<li class="">Shows what you see with naked eye</li>
+</ul>
+<p><strong>When to use</strong>: Getting baseline view, general room survey</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="filter-red-ir-with-flash">Filter: RED (IR with Flash)<a href="#filter-red-ir-with-flash" class="hash-link" aria-label="Direct link to Filter: RED (IR with Flash)" title="Direct link to Filter: RED (IR with Flash)" translate="no">​</a></h3>
+<ul>
+<li class="">Best used WITH strobe flash enabled</li>
+<li class="">Hidden cameras appear as <strong>bright reflections</strong></li>
+<li class="">Background appears reddish</li>
+<li class="">Camera lenses create obvious bright spots</li>
+</ul>
+<p><strong>How to use:</strong></p>
+<ol>
+<li class="">Tap <strong>FILTER</strong> until &quot;RED&quot; shows</li>
+<li class="">Tap <strong>FLASH</strong> to enable strobe</li>
+<li class="">Point at suspicious areas</li>
+<li class="">Camera lenses will glow and flash</li>
+</ol>
+<p><strong>Best for</strong>: Detecting pinhole cameras, lens reflections</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="filter-nv-green-night-vision-green">Filter: NV GREEN (Night Vision Green)<a href="#filter-nv-green-night-vision-green" class="hash-link" aria-label="Direct link to Filter: NV GREEN (Night Vision Green)" title="Direct link to Filter: NV GREEN (Night Vision Green)" translate="no">​</a></h3>
+<ul>
+<li class="">Displays in green phosphor night vision style</li>
+<li class="">IR sources appear very bright</li>
+<li class="">Good for low-light scanning</li>
+<li class="">Creates contrast between room and IR LEDs</li>
+</ul>
+<p><strong>How to use:</strong></p>
+<ol>
+<li class="">Tap <strong>FILTER</strong> until &quot;NV GREEN&quot; shows</li>
+<li class="">Scan the room slowly</li>
+<li class="">IR LEDs appear as bright green spots</li>
+<li class="">Works in daylight or darkness</li>
+</ol>
+<p><strong>Best for</strong>: General camera detection, low-light areas</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="filter-purple-direct-ir-detection">Filter: PURPLE (Direct IR Detection)<a href="#filter-purple-direct-ir-detection" class="hash-link" aria-label="Direct link to Filter: PURPLE (Direct IR Detection)" title="Direct link to Filter: PURPLE (Direct IR Detection)" translate="no">​</a></h3>
+<ul>
+<li class="">Direct IR LED detection mode</li>
+<li class="">Active IR lights appear very bright</li>
+<li class="">Camera IR illuminators glow</li>
+<li class="">Best for night vision cameras</li>
+</ul>
+<p><strong>How to use:</strong></p>
+<ol>
+<li class="">Tap <strong>FILTER</strong> until &quot;PURPLE&quot; shows</li>
+<li class="">IR LEDs appear almost white/bright</li>
+<li class="">Scan walls, furniture, fixtures</li>
+<li class="">Active cameras easier to spot</li>
+</ol>
+<p><strong>Best for</strong>: Night vision cameras, active IR detection</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="filter-lens-lens-reflection-mode">Filter: LENS (Lens Reflection Mode)<a href="#filter-lens-lens-reflection-mode" class="hash-link" aria-label="Direct link to Filter: LENS (Lens Reflection Mode)" title="Direct link to Filter: LENS (Lens Reflection Mode)" translate="no">​</a></h3>
+<ul>
+<li class="">High contrast black and white mode</li>
+<li class="">Emphasizes lens reflections</li>
+<li class="">Glass surfaces create bright reflections</li>
+<li class="">Camera lenses stand out clearly</li>
+</ul>
+<p><strong>How to use:</strong></p>
+<ol>
+<li class="">Tap <strong>FILTER</strong> until &quot;LENS&quot; shows</li>
+<li class="">All glass surfaces become reflective</li>
+<li class="">Scan room surfaces</li>
+<li class="">Any camera lens will create distinct reflection</li>
+</ol>
+<p><strong>Best for</strong>: Finding cameras behind glass, lens detection</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="flash-strobe-feature">Flash Strobe Feature<a href="#flash-strobe-feature" class="hash-link" aria-label="Direct link to Flash Strobe Feature" title="Direct link to Flash Strobe Feature" translate="no">​</a></h2>
+<p>The <strong>FLASH</strong> button enables strobe light:</p>
+<ul>
+<li class="">Rapidly cycles phone&#x27;s flash on/off</li>
+<li class="">Creates distinctive reflection from camera lenses</li>
+<li class="">Best paired with RED filter</li>
+<li class="">Highly effective for detection</li>
+</ul>
+<p><strong>How to use:</strong></p>
+<ol>
+<li class="">Tap <strong>FLASH</strong> button (toggles on/off)</li>
+<li class="">Flash will strobe rapidly</li>
+<li class="">Point at suspicious areas</li>
+<li class="">Camera lenses reflect flash brightly</li>
+<li class="">Normal objects absorb flash light</li>
+</ol>
+<p><strong>Flash + Red Filter Combination:</strong></p>
+<ul>
+<li class="">Most effective detection method</li>
+<li class="">Camera lenses create obvious bright flashes</li>
+<li class="">Works even in daylight</li>
+<li class="">Highest success rate for finding cameras</li>
+</ul>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>Flash strobe + RED filter is the most reliable combination for camera detection. Start with this setup.</p></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai-detection-feature">AI Detection Feature<a href="#ai-detection-feature" class="hash-link" aria-label="Direct link to AI Detection Feature" title="Direct link to AI Detection Feature" translate="no">​</a></h2>
+<p>The <strong>AI</strong> button enables automatic camera detection:</p>
+<ul>
+<li class="">AI analyzes video for camera shapes</li>
+<li class="">Detection boxes appear around suspected cameras</li>
+<li class="">Shows confidence percentage (higher = more certain)</li>
+<li class="">Phone vibrates when camera detected</li>
+</ul>
+<p><strong>How to use:</strong></p>
+<ol>
+<li class="">Tap <strong>AI</strong> button to enable</li>
+<li class="">Scan the room normally</li>
+<li class="">Watch for red/yellow detection boxes</li>
+<li class="">Boxes appear around suspected cameras</li>
+<li class="">Phone vibrates at detection</li>
+</ol>
+<p><strong>Confidence Levels:</strong></p>
+<table><thead><tr><th>Confidence</th><th>Meaning</th><th>Action</th></tr></thead><tbody><tr><td><strong>95%+</strong></td><td>Almost certainly a camera</td><td>Inspect immediately</td></tr><tr><td><strong>75-95%</strong></td><td>Likely a camera</td><td>Check carefully</td></tr><tr><td><strong>50-75%</strong></td><td>Possible camera</td><td>Manual inspection</td></tr><tr><td><strong>Below 50%</strong></td><td>Uncertain</td><td>Probably false positive</td></tr></tbody></table>
+<p><strong>Tips for AI Detection:</strong></p>
+<ul>
+<li class="">Works best with good lighting</li>
+<li class="">Helps identify camera-shaped objects</li>
+<li class="">Supplement with manual inspection</li>
+<li class="">Can have false positives on buttons, circles, etc.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="snapshot-feature">Snapshot Feature<a href="#snapshot-feature" class="hash-link" aria-label="Direct link to Snapshot Feature" title="Direct link to Snapshot Feature" translate="no">​</a></h2>
+<p>The <strong>SNAPSHOT</strong> button captures the current view:</p>
+<p><strong>How to use:</strong></p>
+<ol>
+<li class="">Find a suspicious area</li>
+<li class="">Frame it in the viewfinder</li>
+<li class="">Tap <strong>SNAPSHOT</strong> button</li>
+<li class="">Image is saved to photo gallery</li>
+<li class="">Use for documentation/evidence</li>
+</ol>
+<p><strong>Why take snapshots:</strong></p>
+<ul>
+<li class="">Document suspected cameras</li>
+<li class="">Create evidence file</li>
+<li class="">Share with security team</li>
+<li class="">Review later for patterns</li>
+</ul>
+<p><strong>Where images are saved:</strong></p>
+<ul>
+<li class="">Android photo gallery</li>
+<li class="">Accessible through Photos app</li>
+<li class="">Can share directly from gallery</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="scanning-technique">Scanning Technique<a href="#scanning-technique" class="hash-link" aria-label="Direct link to Scanning Technique" title="Direct link to Scanning Technique" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices-for-room-scanning">Best Practices for Room Scanning<a href="#best-practices-for-room-scanning" class="hash-link" aria-label="Direct link to Best Practices for Room Scanning" title="Direct link to Best Practices for Room Scanning" translate="no">​</a></h3>
+<p><strong>1. Preparation:</strong></p>
+<ul>
+<li class="">Turn off overhead lights (or dim them)</li>
+<li class="">Ensure you have good battery</li>
+<li class="">Have time to scan thoroughly (10-15 min per room)</li>
+</ul>
+<p><strong>2. Scanner Setup:</strong></p>
+<ul>
+<li class="">Enable FLASH (strobe mode)</li>
+<li class="">Select RED filter</li>
+<li class="">Enable AI detection if available</li>
+<li class="">Ensure you have good phone positioning</li>
+</ul>
+<p><strong>3. Scanning Sequence:</strong></p>
+<ul>
+<li class="">Start from doorway</li>
+<li class="">Move systematically through room</li>
+<li class="">Scan each wall section</li>
+<li class="">Don&#x27;t miss high places (ceilings, corners)</li>
+<li class="">Don&#x27;t miss low places (baseboards, floor)</li>
+</ul>
+<p><strong>4. Focus Areas:</strong></p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Smoke detectors (very common hiding spot)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Light fixtures and bulbs</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Clock radios and electronic devices</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Picture frames</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Air vents and grilles</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Decorative objects</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Electrical outlets</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Mirrors and glass</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Bookshelves and items</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Bathroom fixtures</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="detailed-room-checklist">Detailed Room Checklist<a href="#detailed-room-checklist" class="hash-link" aria-label="Direct link to Detailed Room Checklist" title="Direct link to Detailed Room Checklist" translate="no">​</a></h3>
+<p><strong>Bedroom:</strong></p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Nightstand items</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Light switches and outlets</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Ceiling fixtures</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Closet interior</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Behind mirrors</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Under bed (with mirror/camera pointed at bed)</li>
+</ul>
+<p><strong>Bathroom:</strong></p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Exhaust fan</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Light fixtures</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Mirror and frame</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Soap dispenser</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Towel racks</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Toilet area</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Shower head/curtain</li>
+</ul>
+<p><strong>Living Room:</strong></p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Television and stand</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Bookshelves</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Wall decorations</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Coffee table items</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Lamps and bulbs</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Remote control</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Picture frames</li>
+</ul>
+<p><strong>Office/Workspace:</strong></p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Computer monitor</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Desk phone</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Pen holders</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Wall decorations</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Smoke detector</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Vents</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Cable boxes</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="understanding-common-hidden-cameras">Understanding Common Hidden Cameras<a href="#understanding-common-hidden-cameras" class="hash-link" aria-label="Direct link to Understanding Common Hidden Cameras" title="Direct link to Understanding Common Hidden Cameras" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pinhole-cameras">Pinhole Cameras<a href="#pinhole-cameras" class="hash-link" aria-label="Direct link to Pinhole Cameras" title="Direct link to Pinhole Cameras" translate="no">​</a></h3>
+<ul>
+<li class="">Tiny camera lens (1-2mm hole)</li>
+<li class="">Can be hidden in almost anything</li>
+<li class="">Very hard to spot with naked eye</li>
+<li class="">IR filter shows them clearly</li>
+</ul>
+<p><strong>Detection Method</strong>: RED + FLASH filter, slow scan</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="smoke-detector-cameras">Smoke Detector Cameras<a href="#smoke-detector-cameras" class="hash-link" aria-label="Direct link to Smoke Detector Cameras" title="Direct link to Smoke Detector Cameras" translate="no">​</a></h3>
+<ul>
+<li class="">Most common hiding spot</li>
+<li class="">Camera behind detector lens</li>
+<li class="">Very professional looking</li>
+<li class="">Almost impossible to notice without IR</li>
+</ul>
+<p><strong>Detection Method</strong>: Point scanner directly at detector, look for lens</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="clock-radio-cameras">Clock Radio Cameras<a href="#clock-radio-cameras" class="hash-link" aria-label="Direct link to Clock Radio Cameras" title="Direct link to Clock Radio Cameras" translate="no">​</a></h3>
+<ul>
+<li class="">Camera hidden in alarm clock</li>
+<li class="">Front-facing toward bed</li>
+<li class="">Lens may be visible if you know to look</li>
+<li class="">Common in hotel rooms</li>
+</ul>
+<p><strong>Detection Method</strong>: Scan clock face directly, look for extra holes</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="usb-charger-cameras">USB Charger Cameras<a href="#usb-charger-cameras" class="hash-link" aria-label="Direct link to USB Charger Cameras" title="Direct link to USB Charger Cameras" translate="no">​</a></h3>
+<ul>
+<li class="">Camera in power adapter</li>
+<li class="">Points out of charging port or hole</li>
+<li class="">Can charge phone while recording</li>
+<li class="">Common in budget hotels</li>
+</ul>
+<p><strong>Detection Method</strong>: Inspect chargers carefully, IR scan any holes</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="penobject-cameras">Pen/Object Cameras<a href="#penobject-cameras" class="hash-link" aria-label="Direct link to Pen/Object Cameras" title="Direct link to Pen/Object Cameras" translate="no">​</a></h3>
+<ul>
+<li class="">Tiny camera in pen, button, or small object</li>
+<li class="">Can be placed anywhere</li>
+<li class="">Very hard to detect visually</li>
+<li class="">IR very effective</li>
+</ul>
+<p><strong>Detection Method</strong>: Scan all small objects, look for lens reflections</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="nfc-detection">NFC Detection<a href="#nfc-detection" class="hash-link" aria-label="Direct link to NFC Detection" title="Direct link to NFC Detection" translate="no">​</a></h2>
+<p>If your phone has NFC (Near Field Communication):</p>
+<ul>
+<li class="">App automatically scans for NFC tags</li>
+<li class="">Some cameras have NFC tags for activation</li>
+<li class="">If detected:<!-- -->
+<ul>
+<li class="">Phone vibrates with pattern</li>
+<li class="">Dialog shows tag information</li>
+<li class="">You can copy the tag ID</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-detection-mistakes">Common Detection Mistakes<a href="#common-detection-mistakes" class="hash-link" aria-label="Direct link to Common Detection Mistakes" title="Direct link to Common Detection Mistakes" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="false-positives">False Positives<a href="#false-positives" class="hash-link" aria-label="Direct link to False Positives" title="Direct link to False Positives" translate="no">​</a></h3>
+<p>These are NOT hidden cameras:</p>
+<ul>
+<li class="">❌ Phone charging cables (end looks like lens)</li>
+<li class="">❌ Buttons on furniture (round and reflective)</li>
+<li class="">❌ Screw holes (small round openings)</li>
+<li class="">❌ Air vent holes (grid pattern)</li>
+<li class="">❌ Decorative objects with holes</li>
+</ul>
+<p><strong>How to confirm:</strong></p>
+<ul>
+<li class="">Does it have actual glass lens?</li>
+<li class="">Can you see camera components?</li>
+<li class="">Does it move or have wires?</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="issues-with-detection">Issues with Detection<a href="#issues-with-detection" class="hash-link" aria-label="Direct link to Issues with Detection" title="Direct link to Issues with Detection" translate="no">​</a></h3>
+<p><strong>Too many false positives:</strong></p>
+<ul>
+<li class="">Turn off FLASH if too sensitive</li>
+<li class="">Switch to different filter</li>
+<li class="">Disable AI detection if too aggressive</li>
+<li class="">Focus on manual inspection</li>
+</ul>
+<p><strong>Can&#x27;t find anything:</strong></p>
+<ul>
+<li class="">Try different filters</li>
+<li class="">Ensure good lighting</li>
+<li class="">Scan more slowly</li>
+<li class="">Check less obvious hiding spots</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="after-finding-something-suspicious">After Finding Something Suspicious<a href="#after-finding-something-suspicious" class="hash-link" aria-label="Direct link to After Finding Something Suspicious" title="Direct link to After Finding Something Suspicious" translate="no">​</a></h2>
+<p>If you find what you believe is a hidden camera:</p>
+<ol>
+<li class=""><strong>Don&#x27;t touch it</strong> - Preserve evidence</li>
+<li class=""><strong>Document it</strong>:<!-- -->
+<ul>
+<li class="">Take multiple photos</li>
+<li class="">Note exact location</li>
+<li class="">Record room name/number</li>
+<li class="">Note date and time</li>
+</ul>
+</li>
+<li class=""><strong>Inform authorities</strong>:<!-- -->
+<ul>
+<li class="">Hotel management (if in hotel)</li>
+<li class="">Building owner/manager</li>
+<li class="">Local police</li>
+<li class="">FBI (if serious)</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="troubleshooting-scanner">Troubleshooting Scanner<a href="#troubleshooting-scanner" class="hash-link" aria-label="Direct link to Troubleshooting Scanner" title="Direct link to Troubleshooting Scanner" translate="no">​</a></h2>
+<p><strong>Scanner shows very dark image:</strong></p>
+<ul>
+<li class="">Your room is too dark</li>
+<li class="">Point toward light source</li>
+<li class="">Turn on lights for scanning</li>
+<li class="">Enable filters for better visibility</li>
+</ul>
+<p><strong>Flash doesn&#x27;t seem to work:</strong></p>
+<ul>
+<li class="">Flash may be already on (constant light)</li>
+<li class="">Tap again to cycle modes</li>
+<li class="">Check if phone&#x27;s flash hardware working</li>
+<li class="">Try disabling and re-enabling</li>
+</ul>
+<p><strong>AI detection not working:</strong></p>
+<ul>
+<li class="">AI may not be supported on your phone</li>
+<li class="">Update ToadCAM to latest version</li>
+<li class="">Ensure good processing power available</li>
+<li class="">Close other apps</li>
+</ul>
+<p><strong>Camera very blurry:</strong></p>
+<ul>
+<li class="">Phone needs to focus</li>
+<li class="">Move closer/farther from object</li>
+<li class="">Tap on screen to refocus</li>
+<li class="">Wait a moment for autofocus</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps" translate="no">​</a></h2>
+<ul>
+<li class="">Learn <a class="" href="/docs/docs/products/toad-cam/nearby-cameras">Nearby Cameras Detection</a></li>
+<li class="">Explore <a class="" href="/docs/docs/products/toad-cam/alpr-map">DeFlock ALPR Mapping</a></li>
+<li class="">Read <a class="" href="/docs/docs/products/toad-cam/tips">Tips &amp; Best Practices</a></li>
+<li class="">See <a class="" href="/docs/docs/products/toad-cam/troubleshooting">Troubleshooting Guide</a></li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/products/toad-cam/ir-scanner.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/docs/products/toad-cam/installation"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Installation &amp; Setup</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/docs/products/toad-cam/nearby-cameras"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Finding Nearby Cameras</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#how-it-works" class="table-of-contents__link toc-highlight">How It Works</a><ul><li><a href="#why-ir-works" class="table-of-contents__link toc-highlight">Why IR Works</a></li></ul></li><li><a href="#opening-the-scanner" class="table-of-contents__link toc-highlight">Opening the Scanner</a></li><li><a href="#filter-modes" class="table-of-contents__link toc-highlight">Filter Modes</a><ul><li><a href="#filter-off-normal-view" class="table-of-contents__link toc-highlight">Filter: OFF (Normal View)</a></li><li><a href="#filter-red-ir-with-flash" class="table-of-contents__link toc-highlight">Filter: RED (IR with Flash)</a></li><li><a href="#filter-nv-green-night-vision-green" class="table-of-contents__link toc-highlight">Filter: NV GREEN (Night Vision Green)</a></li><li><a href="#filter-purple-direct-ir-detection" class="table-of-contents__link toc-highlight">Filter: PURPLE (Direct IR Detection)</a></li><li><a href="#filter-lens-lens-reflection-mode" class="table-of-contents__link toc-highlight">Filter: LENS (Lens Reflection Mode)</a></li></ul></li><li><a href="#flash-strobe-feature" class="table-of-contents__link toc-highlight">Flash Strobe Feature</a></li><li><a href="#ai-detection-feature" class="table-of-contents__link toc-highlight">AI Detection Feature</a></li><li><a href="#snapshot-feature" class="table-of-contents__link toc-highlight">Snapshot Feature</a></li><li><a href="#scanning-technique" class="table-of-contents__link toc-highlight">Scanning Technique</a><ul><li><a href="#best-practices-for-room-scanning" class="table-of-contents__link toc-highlight">Best Practices for Room Scanning</a></li><li><a href="#detailed-room-checklist" class="table-of-contents__link toc-highlight">Detailed Room Checklist</a></li></ul></li><li><a href="#understanding-common-hidden-cameras" class="table-of-contents__link toc-highlight">Understanding Common Hidden Cameras</a><ul><li><a href="#pinhole-cameras" class="table-of-contents__link toc-highlight">Pinhole Cameras</a></li><li><a href="#smoke-detector-cameras" class="table-of-contents__link toc-highlight">Smoke Detector Cameras</a></li><li><a href="#clock-radio-cameras" class="table-of-contents__link toc-highlight">Clock Radio Cameras</a></li><li><a href="#usb-charger-cameras" class="table-of-contents__link toc-highlight">USB Charger Cameras</a></li><li><a href="#penobject-cameras" class="table-of-contents__link toc-highlight">Pen/Object Cameras</a></li></ul></li><li><a href="#nfc-detection" class="table-of-contents__link toc-highlight">NFC Detection</a></li><li><a href="#common-detection-mistakes" class="table-of-contents__link toc-highlight">Common Detection Mistakes</a><ul><li><a href="#false-positives" class="table-of-contents__link toc-highlight">False Positives</a></li><li><a href="#issues-with-detection" class="table-of-contents__link toc-highlight">Issues with Detection</a></li></ul></li><li><a href="#after-finding-something-suspicious" class="table-of-contents__link toc-highlight">After Finding Something Suspicious</a></li><li><a href="#troubleshooting-scanner" class="table-of-contents__link toc-highlight">Troubleshooting Scanner</a></li><li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/docs/intro">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/docs/products/ghost-venom/overview">Products</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Contact</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://ideatech.us" target="_blank" rel="noopener noreferrer" class="footer__link-item">Website<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="tel:7088080719" target="_blank" rel="noopener noreferrer" class="footer__link-item">Phone: (708) 808-0719<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Apps</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://apps.ideatech.us" target="_blank" rel="noopener noreferrer" class="footer__link-item">Download Apps<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 iDEA Technology. All rights reserved.</div></div></div></footer></div>
+</body>
+</html>
